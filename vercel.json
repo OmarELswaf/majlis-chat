@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run build --workspace=client",
+  "outputDirectory": "client/dist",
+  "installCommand": "npm install",
+  "build": {
+    "env": {
+      "VITE_CHAT_MODE": "demo"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/index.js" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
