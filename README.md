@@ -2,9 +2,11 @@
 
 Realtime chat rooms with live messages, presence and typing indicators. Express + Socket.io backend (with MongoDB persistence via Mongoose) and a React + Tailwind client.
 
-> **Live demo:** https://majlis-chat.vercel.app (link updated after deployment)
+> **Live demo:** https://majlis-chat-delta.vercel.app
 >
 > **About the live demo - read this:** WebSockets need a long-lived server, and Vercel's serverless functions don't keep socket connections open. So the hosted demo runs the same React UI in a clearly labeled **simulated mode**: messages, presence and typing come from an in-browser simulation with bot participants (Salma, Karim, Nour), not real people. The REST API (`/api/rooms`, `/api/rooms/:id/messages`) is live on the demo URL with an in-memory store. The full Socket.io + MongoDB backend is in this repo and runs locally in one command (below).
+
+![Majlis chat rooms - simulated demo mode](screenshots/chat-demo.png)
 
 ## Features
 
